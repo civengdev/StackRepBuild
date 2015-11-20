@@ -94,7 +94,7 @@ var showTopAnswerers = function(answerer){
 	userDisplay.text(answerer.user.display_name);
 	//console.log(userDisplay.text(answerer.display_name));
 	console.log(userDisplay);
-	$('.results').append(userDisplay);
+	$('.results').append("<p><a href="+answerer.user.link+">"+answerer.user.display_name+"</a><br/></p>");
 
 	/*// set the date asked property in result
 	var asked = result.find('.asked-date');
